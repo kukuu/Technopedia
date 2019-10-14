@@ -2235,33 +2235,10 @@ PreCSS is a tool that allows you to use Sass-like markup in your CSS files. It l
 PostCSS-cssnext is a PostCSS plugin that helps you to use the latest CSS syntax today. It transforms CSS specs into more compatible CSS so you don't need to wait for browser support.
 
 
-## Selections
+## Related Articles
 
-| Label | Resource |
-| --- | --- |
-| React Hooks API | https://github.com/kukuu/react-hooks/blob/master/react-hooks-api/notes.md |
-| How To Fetch Data From An API With React Hooks |  https://github.com/kukuu/react-hooks/tree/master/react-hooks-api |
-| How to integrate React Hooks into your project without changing your Redux code | https://medium.com/free-code-camp/how-to-integrate-react-hooks-into-your-project-without-changing-your-redux-code-974e6f70f0b0 |
-| Airbnb JavaScript Style Guide | https://github.com/airbnb/javascript |
-| How to Use Sass and Styled Components in a React JS Application | https://medium.com/@iam_timsmith/how-to-use-sass-and-styled-components-in-a-react-js-application-9d352c915fe0 |
-| Basic React Component  | https://codepen.io/iamtimsmith/pen/xaRydm/#code-area |
-| Algorithms in JavaScript  | https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038 |
-| RxJS: A Simple Introduction  | https://medium.com/@rossbulat/rxjs-a-simple-introduction-32fb48f52a67 |
-| Advanced TypeScript by Example: React Form Carousel  | https://medium.com/topic/javascript |
-| How I built an async form validation library in ~100 lines of code with React Hooks  | https://medium.com/free-code-camp/how-i-built-an-async-form-validation-library-in-100-lines-of-code-with-react-hooks-81dbff6c4a04 |
-| Did you know — createReducer Works with React Hooks. Here’s how.  | https://medium.com/free-code-camp/did-you-know-createreducer-works-with-react-hooks-heres-how-b324c558e12f |
-| How to set-up a powerful API with Nodejs, GraphQL, MongoDB, Hapi, and Swagger  | https://levelup.gitconnected.com/how-to-setup-a-powerful-api-with-nodejs-graphql-mongodb-hapi-and-swagger-e251ac189649 |
-| CRUD App with Hooks  | https://taniarascia.github.io/react-hooks/ |
-| Redux-Observable Can Solve Your State Problems | https://itnext.io/redux-observable-can-solve-your-state-problems-15b23a9649d7 |
-| Replacing Redux with React Hooks and Context: A small concrete example with reactive-react-redux | https://levelup.gitconnected.com/redux-meets-hooks-for-non-redux-users-a-small-concrete-example-with-reactive-react-redux-6babc881639b |
-| Configuring Redux in a Universal React App with React Router | https://ranjithnair.github.io/2018/03/12/Universal-Redux.html |
-| Git & GitHub Tutoria | https://www.youtube.com/watch?v=fQLK8Ib_SKk |
-| React Context API | https://blog.pusher.com/react-context-api/ |
-| Server Side Rendering  | https://github.com/kukuu/React-Router-Server-Side-Rendering |
-| Build Real Web App with React | https://www.youtube.com/watch?v=NO2DaxhoWHk - https://github.com/bearski/reddice - https://github.com/Remchi/bookworm-react/commits/master |
-| AJAX - Generates JSON datasets for testing | http://www.filltext.com/ |
-|  Redux Saga | https://www.youtube.com/watch?v=aH2qQGgugG0 |
+1. Agility - https://github.com/kukuu/AGILITY/blob/master/README.md 
 
+2. Digital Transformation - https://github.com/kukuu/digitalTransformationStrategies/blob/master/README.md 
 
-
-
+3. Scaffolding for projects - https://github.com/kukuu/AGILITY/blob/master/README-scaffolding.md
