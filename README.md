@@ -87,21 +87,59 @@ four ceremonies: the sprint planning meeting, Daily Scrum, sprint review meeting
 ## CODE REVIEW
 
 
-1. Does the code follow SOLID principles
+1. SOLID: Does the code follow SOLID principles?
 
-2. Formatting: Where are the spaces and line breaks? Are they using tabs or spaces? How are the curly braces laid out?
-
-3. Style: Are the variables/parameters declared as final? Are method variables defined close to the code where they’re used or at the start of the method?
-
-4. Naming: Do the field/constant/variable/param/class names conform to standards? Are the names overly short?
-
-5. Test coverage: Is there a test for this code?
-
-6. Race conditions
-
-7. What design patterns are used in the new code? Any anti-patterns (in loops etc)
+```
+i. Single responsibility principle
+A class should only have a single responsibility, that is, only changes 
+to onepart of the software's specification should be able to affect the 
+specification of the class.
 
 
+ii. Open–closed principle
+"Software entities ... should be open for extension, but closed for modification."
+
+iii. Liskov substitution principle
+"Objects in a program should be replaceable with instances of their subtypes 
+without altering the correctness of that program." 
+
+iv. Interface segregation principle
+"Many client-specific interfaces are better than one general-purpose interface.
+
+v. Dependency inversion principle
+One should "depend upon abstractions, concretions."
+
+```
+
+2. Check for null pointers where exceptions are needed.
+
+3. Buffer Overflows
+
+4. Integer overflows
+
+5. Uninitialised objects
+
+6. DRY: Are re-usble properties, routines being cached?
+
+7. Formatting: Where are the spaces and line breaks? Are they using tabs or spaces? How are the curly braces laid out?
+
+8. Style: Are the variables/parameters declared as final? Are method variables defined close to the code where they’re used or at the start of the method?
+
+9. Naming: Do the field/constant/variable/param/class names conform to standards? Are the names overly short?
+
+10. Test coverage: Is there a test for this code?
+
+11. Race conditions: Any global polution? Leakages? Managing callbacks and side effects.
+
+12. Design patterns: What design patterns are used in the new code? Any anti-patterns (in loops etc)
+
+13. Lines of code: Are functions too long?
+
+14. Using modern syntaxes (ES6): Arrow functions, default parameters, block scoping, template strings, spread operators, generator functions, destructuring etc
+
+15. Optimisation in multi-threaded code
+
+Also - https://github.com/kukuu/javascript/blob/master/citylit/tutorials/JavaScript-BestPractices.pdf
 ## Attributes of a good leader
 
 
@@ -1255,6 +1293,14 @@ Statement Coverage – ensure every single line of code is tested.
 Branch Coverage – ensure every branch (e.g. true or false) is tested.
 Path Coverage – ensure all possible paths are tested.
 
+## Challenges to integrating heterogenous services
+
+The increase need for services to handle a plethora of business needs within the enterprise landscape has yielded to an increase in the development of heterogeneous services across the digital world. In today’s digital economy, services are the key components for communication and collaboration amongst enterprises internally and externally. 
+
+Since Internet has stimulated the use of services, different services have been developed for different purposes prompting those services to be heterogeneous due to incompatibles approaches relied upon at both conceptual and exploitation phases. The proliferation of developed heterogeneous services in the digital world therefore comes along with a range of challenges more precisely in the integration layer. 
+
+Traditionally, integration is achieved by using gateways, which require considerable configuration effort. Many approaches and frameworks have been developed by different researchers to overcome these challenges, but up to date the challenges of integration heterogeneous services with minimal user-involvement still exist. 
+
 
 ##  SMACSS
 
@@ -1650,9 +1696,9 @@ ii. html
 <script src= "Customer.js"></script>
 <body>
 	<script>
-	let cust = new Customer();
-	cust.CustomerName = "Luca";
-	alert(cust.CustomerName);
+		let cust = new Customer();
+		cust.CustomerName = "Luca";
+		alert(cust.CustomerName);
 	</script>
 </body>
 ```
@@ -1853,11 +1899,94 @@ html
 ```
 
 
+## map
+
+let tasks = [
+	{
+ 
+    'name'     : 'Write for Envato Tuts+',
+ 
+    'duration' : 120
+ 
+  },
+ 
+  {
+ 
+    'name'     : 'Work out',
+ 
+    'duration' : 60
+ 
+  },
+ 
+  {
+ 
+    'name'     : 'Procrastinate on Duolingo',
+ 
+    'duration' : 240
+ 
+  }
+ 
+];
+
+
+let result = tasks.map(task, index, array) => {
+	return task.name
+}
+
+
+## reduce
+
+let list = [2, 3, 4, 5];
+
+let total_value = list.reduce((current, previous) => previous + current )
+
 ## Setting up a React + TypeScript + SASS + Webpack and Babel project in 6 Steps
 
 https://medium.com/swlh/setting-up-a-react-typescript-sass-webpack-and-babel-7-project-in-6-steps-b4d172d1d0d6
 
 
+
+## JavaScript Design Patterns
+
+1. Constructor Pattern
+
+2. Module Pattern
+
+3. Revealing Module Pattern
+
+4. Singleton Pattern
+
+5. Observer Pattern
+
+6. Mediator Pattern
+
+7. Prototype Pattern
+
+8. Command Pattern
+
+9. Facade Pattern
+
+10. Factory Pattern
+
+11. Mixin Pattern
+
+12. Decorator Pattern
+
+13. Flyweight Pattern
+
+14. JavaScript MV* Patterns
+
+15. MVC Pattern
+
+16. MVP Pattern
+
+17. MVVM Pattern
+Modern Modular JavaScript Design Patterns
+1. AMD
+
+2. CommonJS
+
+3. ES Harmony
 ## OKR
 
 The acronym OKR stands for Objectives and Key Results, a popular goal management framework that helps companies implement strategy. The benefits of the framework include improved focus, increased transparency, and better alignment. It also helps companies to move from an output to an outcome-based approach to work.
@@ -1871,6 +2000,33 @@ In programming, we store values in variables.
 A deep copy means that all of the values of the new variable are copied and disconnected from the original variable. A shallow copy means that certain (sub-)values are still connected to the original 
 
 https://we-are.bookmyshow.com/understanding-deep-and-shallow-copy-in-javascript-13438bad941c
+
+## React Native 
+
+React Native components are pure, side-effect-free functions that return what the views look like at any point in time. For this reason it is easier to write state-dependent views, as you don't have to care about updating the view when the state changes since the framework does this for you.
+
+The UI is rendered using actual native views, so the final user experience is not as bad as other solutions that simply render a web component inside a WebView.
+
+
+NATIVE CODING
+
+There are certain features that cannot be implemented solely in JavaScript, native code is needed for:
+
+push notifications
+
+deep linking
+
+native UI components that need to be exposed to React.
+
+Overall approximately 80% of the code is shared between iOS and Android and written in JavaScript.
+
+HOT RELOADING can be enabled. 
+
+Conclusions:
+
+React Native seems to be suitable for apps with simple UI, simple animations, and not long life or performance-critical apps. 
+
+We found that a good use case for React Native can be found in applications that need short time support, for example an app for a one-shot event like a concert or a conference. These kind of apps could also benefit from the fast release cycle available if dynamically loading part of the application logic from a remote server.
 
 ## Curry and compositional programming
 
@@ -1913,7 +2069,7 @@ Native array methods that iterate through all its items are: indexOf, lastIndexO
 
 Additionally, we can provide a callback function to the following methods: findIndex, find, filter, forEach, map, some, every, and reduce.
 
-## Features PHP 7
+## Features PHP 7:
 
 Scalar type declarations.
 
@@ -1981,9 +2137,7 @@ ReactDOM.render( <MyApp />,document.getElementById("result"))
 ```
 
 
-Component shell 
-
-component.js
+Cmponent shell ()component.js
 
 ```
 import React { Component } from 'react';
@@ -2026,11 +2180,47 @@ export function changeColor(color){
 ```
 
 
+
+## RxJS
+
+RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables that makes it easier to compose asynchronous or callback-based code. See (RxJS Docs)
+
 ## CloudBees Core
 
  Is a continuous delivery solution that provides manageability, security, best practices and supports multiple platforms, teams, and geographical locations. ... CloudBees Core on modern cloud platforms provides flexible, governed continuous delivery with the high availability and scalability of Kubernetes.
 
 
+## TOGAF
+
+The Open Group Architecture Framework (TOGAF) is an enterprise architecture methodology that offers a high-level framework for enterprise software development. 
+
+
+TOGAF helps organize the development process through a systematic approach aimed at reducing errors, maintaining timelines, staying on budget and aligning IT with business units to produce quality results.
+
+Like other IT management frameworks, TOGAF helps businesses align IT goals with overall business goals, while helping to organize cross-departmental IT efforts. TOGAF helps businesses define and organize requirements before a project starts, keeping the process moving quickly with few errors.
+
+
+The Open Group states that TOGAF is intended to:
+
+Ensure everyone speaks the same language
+Avoid lock-in to proprietary solutions by standardizing on open methods for enterprise architecture
+Save time and money, and utilize resources more effectively
+Achieve demonstrable ROI.
+
+Different elements of TOGAF are:
+
+BADT:
+
+There are four architectural domains in TOGAF 9.1 that offer specializations for businesses.
+
+i. Business architecture: includes information on business strategy, governance, organization and how to adapt any existing processes within the organization.
+
+ii. Applications architecture: a blueprint for structuring and deploying application systems and in accordance with business goals, other organizational frameworks and all core business processes.
+
+
+iii. Data architecture: defining the organization’s data storage, management and maintenance, including logical and physical data models.
+
+iv. Technical architecture: also called technology architecture; it describes all necessary hardware, software and IT infrastructure involved in developing and deploying business applications.
 
 ## OWASP
 
@@ -2040,11 +2230,11 @@ Injection.
 
 Broken Authentication.
 
+Broken Access control.
+
 Sensitive data exposure.
 
 XML External Entities (XXE)
-
-Broken Access control.
 
 Security misconfigurations.
 
@@ -2080,9 +2270,6 @@ Reuse and reduce components.
 Test with the difficult browsers first. 
 
 Use automation - Create test scripts .
-
-
-
 
 
 
@@ -2153,6 +2340,39 @@ Control change.
 Use SOLID Principles
 
 
+## Basic Programming Principles Every Programmer Must Follow
+
+1. KISS. The “keep it simple, stupid” principle applies to pretty much all of life, but it's especially necessary in medium-to-large programming projects. ...
+
+2. DRY. ...
+
+3. Develop iteratively
+
+4. Composition > Inheritance. ...
+
+5. Single Responsibility. ...
+
+6. Separation of Concerns. ...
+
+7. Avoid Premature Optimization.
+
+## What is diff between functional and object oriented programming?
+
+Both concepts have different methods for storing the data and how to manipulate the data. 
+
+In object oriented programming, you store the data in attributes of objects and have functions that work for that object and do the manipulation. 
+
+In functional programming, we view everything as data transformation.
+
+
+OOP says that bringing together data and its associated behavior in a single location (called an “object”) makes it easier to understand how a program works. 
+
+FP says that data and behavior are distinctively different things and should be kept separate for clarity.
+
+Functional programming is stateless. ... The lack of state allows a functional language to be reasoned just by looking at a function's input and output.
+
+FP treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
+
 ## Agile methodologies
 
 Scrum
@@ -2187,6 +2407,10 @@ Meanwhile, the map() method will also call a provided function on every element 
 
 https://www.youtube.com/watch?v=OEWXbpUMODk
 
+## Working with Laravel
+
+https://www.youtube.com/watch?v=emyIlJPxZr4
+
 ## PHP Validate email
 
 ```
@@ -2219,6 +2443,27 @@ final class EmailTest extends TestCase
 
 ```
 
+## Following are the features available with VueJS:
+
+
+Virtual DOM. VueJS makes the use of virtual DOM, which is also used by other frameworks such as React, Ember, etc. ...
+
+Data Binding. 
+
+Components. 
+
+Event Handling. 
+
+Animation/Transition. 
+
+Computed Properties. 
+
+Templates. 
+
+Directives.
+
+
+https://www.tutorialspoint.com/vuejs/vuejs_overview.htm
 
 ## Cordova platform
 
@@ -2234,10 +2479,275 @@ PreCSS is a tool that allows you to use Sass-like markup in your CSS files. It l
 
 PostCSS-cssnext is a PostCSS plugin that helps you to use the latest CSS syntax today. It transforms CSS specs into more compatible CSS so you don't need to wait for browser support.
 
+## JS Promises snippet
 
-## Kubernetes
+i. Shell
+```
+const flipACoin = new Promise((resolve, reject) => {    
 
-https://github.com/kukuu/Microservice-NodeJS/blob/master/kubernetes/kubernetes.md
+});
+```
+
+
+A Promise is a JavaScript class, and its constructor takes in a single argument: a function called the executor function. The executor function itself has two arguments called resolve and reject. The code inside the executor function runs and you call resolve() when you’re done and reject() if something goes wrong.
+
+ii. Extending the execution function
+
+```
+const flipACoin = new Promise((resolve, reject) => {    
+  const flipResult = flip(); //let's say flip() takes a few seconds
+  
+  if(flipResult) {
+    resolve();
+  } else {
+    reject();
+  }
+});
+
+```
+
+iii. Interacting With Surrounding Code
+
+Now that we’ve got a Promise running, let’s see how it interacts with the context around it. One of the most important facets of using a Promise is that even though you’ve created a Promise, the code around it keeps running!
+
+```
+console.log("I'm about to flip a coin!");
+
+const flipACoin = new Promise((resolve, reject) => {
+  console.log("I'm flipping the coin!");
+  
+  const flipResult = flip(); //let's say flip() takes a few seconds
+  
+  if(flipResult) {
+    console.log("Here is the coin flip result!", flipResult);
+    resolve();
+  } else {
+    reject();
+  }
+});
+
+console.log("I have flipped the coin.")
+
+```
+
+
+and this is the output:
+a. “I’m about to flip a coin!”
+
+b. “I’m flipping the coin!”
+
+c. “I have flipped the coin.”
+
+d. “Here is the coin flip result! Heads”
+
+
+
+iv. Waiting For A Promise To Finish
+
+You can call several functions on a Promise in order to run code in response to the Promise completing. The first one we’ll discuss is .then()
+
+```
+console.log("I'm about to flip a coin!");
+
+const flipACoin = new Promise((resolve, reject) => {
+  console.log("I'm flipping the coin!");
+  
+  const flipResult = flip(); //let's say flip() takes a few seconds
+  
+  if(flipResult) {
+    console.log("Here is the coin flip result!", flipResult);
+    resolve();
+  } else {
+    reject();
+  }
+}).then(() => {
+  console.log("I have flipped the coin.")
+});
+
+```
+
+
+
+.then() is a function of a Promise that takes in a function that will be run after the code inside the executor function of the Promise calls resolve(). In this new snippet, the following will be the order of logs:
+
+a. “I’m about to flip a coin!”
+
+b. “I’m flipping the coin!”
+
+c. “Here is the coin flip result! Heads”
+
+d. “I have flipped the coin.”
+
+The content of the .then() function is only called after the resolve() call, which only happens after “Here is the coin flip result! Heads” has been printed to the log. We’ve now successfully waited for the Promise to complete before doing something!
+
+Here are all of the other Promise functions that you can use:
+
+```
+const flipACoin = new Promise((resolve, reject) => {
+  resolve();
+}).then(() => {
+  //use `.then()` to do something after `resolve()` has been called
+}).catch(() => {
+  //use `.catch()` to do something after `reject()` has been called
+}).finally(() => {
+  //use `.finally()` to do something either way
+});
+
+```
+
+
+v. Returning Values Out Of Promises
+
+Waiting for a Promise is useful, but it’s even more useful to be able to tell surrounding code what the resolved value of the Promise is. To accomplish this, you need two things:
+
+a. resolve() should take in an argument
+
+b. The function in .then() should take in a parameter
+
+```
+const flipACoin = new Promise((resolve, reject) => {
+  const flipResult = flip(); //let's say flip() takes a few seconds
+  
+  if(flipResult) {
+    resolve(flipResult);
+  } else {
+    reject();
+  }
+}).then((flipResult) => {
+  console.log(`The result was ${flipResult}`);
+});
+
+```
+
+
+vi. Using A Promise Later
+
+You can  break away from promises and continue to use .then() later, so long as you have them stored in variables.
+
+```
+const flipACoin = new Promise((resolve, reject) => {
+  const flipResult = flip(); //let's say flip() takes a few seconds
+  
+  if(flipResult) {
+    resolve(flipResult);
+  } else {
+    reject();
+  }
+});
+
+//...
+//do other things
+//...
+
+console.log("Wait did I flip the coin?");
+
+flipACoin.then((flipResult) => {
+  console.log("Oh I did!");
+});
+
+console.log("Double checking...");
+
+flipACoin.then((flipResult) => {
+  console.log("Okay I definitely did!");
+});
+
+```
+
+vii. Chaining
+
+The most aesthetic property of promises is that they can be chained:
+
+```
+const flipACoin = new Promise((resolve, reject) => {
+  resolve();
+}).then(() => {
+  doSomething();
+}).then(() => {
+  doSomethingElse();
+}).then(() => {
+  doAnotherThing();
+});
+
+```
+
+Note:
+
+This is highly maintainable and readable because as you continue to add more things to depend on, you can simply keep adding chained .then() calls.
+
+But there’s something tricky here that you need to know! Look at the snippet above. You might think that doSomethingElse() will wait for doSomething() to complete. But it doesn’t! Here’s why.
+
+Every .then() call in a chain waits on the last Promise in the chain, not the .then() before it. 
+
+That means if doSomething() takes a while, doSomethingElse() may finish executing before doSomething() is finished executing.
+
+See: https://codepen.io/jksaunders/pen/pozmWGv
+
+
+
+
+## "please enter a commit message to explain why this merge is necessary"
+
+It's not a Git error message, it's the editor as git uses your default editor.
+
+To solve this:
+
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+
+
+## Git & GitHub
+
+https://www.youtube.com/watch?v=3RjQznt-8kE
+
+
+## REACT HOOKS 
+
+https://reactjs.org/docs/hooks-overview.html
+
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+Hooks are backwards-compatible. 
+
+```
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+```
+
+
+Here, useState is a Hook (we’ll talk about what this means in a moment). We call it inside a function component to add some local state to it. React will preserve this state between re-renders. useState returns a pair: the current state value and a function that lets you update it. You can call this function from an event handler or somewhere else. It’s similar to this.setState in a class, except it doesn’t merge the old and new state together. (We’ll show an example comparing useState to this.state in Using the State Hook.)
+
+The only argument to useState is the initial state. In the example above, it is 0 because our counter starts from zero. Note that unlike this.state, the state here doesn’t have to be an object — although it can be if you want. The initial state argument is only used during the first render.
+
+You can use the State Hook more than once in a single component:
+
+
+```
+function ExampleWithManyStates() {
+  // Declare multiple state variables!
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState('banana');
+  const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+  // ...
+}
+
+```
 
 
 ## Related Articles
