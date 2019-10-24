@@ -46,6 +46,7 @@ Because ReactJS helps to prevent updating of DOM, it means that the apps will be
 
 10. JSX produces React “elements” and has a number of side benefits, including helping prevent injection attacks.
 
+REACT Testing - https://github.com/testing-library/react-testing-library/blob/master/README.md
 
 ## What is JSX
 
@@ -281,7 +282,7 @@ Lifecycle methods (with the exception of constructor) are hard to reason about. 
 
 constructor:
 
-The first thing that gets called is your component constructor, if your component is a class component. This does not apply to functional components i.e REACT Hooks.
+The first thing that gets called is your component constructor, if your component is a class component. This does not apply to functional components i.e REACT Hooks (https://reactjs.org/docs/hooks-overview.html).
 
 Most Common Use Case For Constructor: Setting up state, creating refs and method binding.
 
