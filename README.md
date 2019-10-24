@@ -378,13 +378,15 @@ OutSystems is a low-code platform for the development of enterprise web and mobi
 Developermust  strive to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge - providing an organization structure for common issues in a particular circumstance.
 
 
-i. Module Design Pattern
+i. Constructor Pattern
 
-ii. Prototype Design Pattern
+ii. Module Design Pattern
 
-iii. Observer Design Pattern
+iii. Prototype Design Pattern
 
-iv. Singleton
+iv. Observer Design Pattern
+
+v. Singleton
 
 
 Also - https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know 
