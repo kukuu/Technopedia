@@ -174,6 +174,17 @@ Amazon Elastic Container Registry (ECR) is a fully-managed Docker container regi
 
 ## Tracking the metrics / KPI (of the team)
 
+A. SPRINT BURN DOWN CHARTS - KPI Measurement
+
+The Sprint Burndown Chart makes the work of the Team visible. It is a graphic representation that shows the rate at which work is completed and how much work remains to be done over the SPRINT period. The chart slopes downward over Sprint duration and across Story Points completed.
+
+The outstanding work (or backlog) is often on the vertical axis, with time along the horizontal. That is, it is a run chart of outstanding work. It is useful for predicting/forecasting when all of the work will be completed
+
+B. SPRINT BURN UP CHARTS
+Burn up chart shows how much work has been completed, and the total amount of work.
+
+C. The Team
+
 Keeping track of certain metrics is an important step in making sure your company’s software engineering team is performing as efficiently and productively as possible. Here are some of the most essential metrics for developers to track:
 
 1. Lead time
@@ -239,16 +250,6 @@ The team:
 
 7. Accountable for end to end delivery of the products and services. Holding each one responsible.
 
-
-## SPRINT BURN DOWN CHARTS - KPI Measurement.
-
-The Sprint Burndown Chart makes the work of the Team visible. It is a graphic representation that shows the rate at which work is completed and how much work remains to be done over the SPRINT period. The chart slopes downward over Sprint duration and across Story Points completed.
-
-The outstanding work (or backlog) is often on the vertical axis, with time along the horizontal. That is, it is a run chart of outstanding work. It is useful for predicting/forecasting when all of the work will be completed
-
-## SPRINT BURN UP CHARTS
-
-Burn up chart shows how much work has been completed, and the total amount of work.
 
 ## ES5/ES6 
 
