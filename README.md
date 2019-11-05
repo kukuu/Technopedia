@@ -18,6 +18,31 @@ A Hadoop data lake is a data management platform comprising one or more Hadoop c
 
  Raw data is data that has not yet been processed for a purpose. Much associated with Data Lake. Because of this, data lakes typically require much larger storage capacity than data warehouses.
 
+## Continuous Integration 
+
+CI is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
+
+The goal of Continuous Integration is to provide rapid feedback so that if a defect is introduced into the code base, it can be identified and corrected as soon as possible. Continuous integration software tools can be used to automate the testing and build a document trail.
+
+A CI/CD tool such as Jenkins or Travis CI is used to automate the steps and provide reporting.
+
+How do you achieve continuous integration?
+
+1. Maintain a code repository.
+
+2. Automate the build.
+
+3. Make the build self-testing.
+
+4. Everyone commits to the baseline every day.
+
+5. Every commit (to baseline) should be built.
+
+6. Keep the build fast.
+
+7. Test in a clone of the production environment.
+
+
 ## Benefits of REACT
 
 1. Used for Single Page Applications
@@ -174,17 +199,6 @@ Amazon Elastic Container Registry (ECR) is a fully-managed Docker container regi
 
 ## Tracking the metrics / KPI (of the team)
 
-A. SPRINT BURN DOWN CHARTS - KPI Measurement
-
-The Sprint Burndown Chart makes the work of the Team visible. It is a graphic representation that shows the rate at which work is completed and how much work remains to be done over the SPRINT period. The chart slopes downward over Sprint duration and across Story Points completed.
-
-The outstanding work (or backlog) is often on the vertical axis, with time along the horizontal. That is, it is a run chart of outstanding work. It is useful for predicting/forecasting when all of the work will be completed
-
-B. SPRINT BURN UP CHARTS
-Burn up chart shows how much work has been completed, and the total amount of work.
-
-C. The Team
-
 Keeping track of certain metrics is an important step in making sure your company’s software engineering team is performing as efficiently and productively as possible. Here are some of the most essential metrics for developers to track:
 
 1. Lead time
@@ -250,6 +264,16 @@ The team:
 
 7. Accountable for end to end delivery of the products and services. Holding each one responsible.
 
+
+## SPRINT BURN DOWN CHARTS - KPI Measurement.
+
+The Sprint Burndown Chart makes the work of the Team visible. It is a graphic representation that shows the rate at which work is completed and how much work remains to be done over the SPRINT period. The chart slopes downward over Sprint duration and across Story Points completed.
+
+The outstanding work (or backlog) is often on the vertical axis, with time along the horizontal. That is, it is a run chart of outstanding work. It is useful for predicting/forecasting when all of the work will be completed
+
+## SPRINT BURN UP CHARTS
+
+Burn up chart shows how much work has been completed, and the total amount of work.
 
 ## ES5/ES6 
 
@@ -465,6 +489,7 @@ If it's a throw away quick hack you know will never be re-used, unit tests might
 
 
 Use TDD if you are implementing an isolated library-like module. If you’re not implementing an isolated library-like module, it’s best to implement first and then conduct the tests. The important thing is to make sure you don’t implement too much without writing any tests. Ideally you should implement incrementally, and at the end of each step, do the unit tests.
+
 Write unit tests daily. Do not code for days, or worse weeks, and leave unit tests to the end. By that time, you will have lost most of the context. Writing unit tests is inherently dull; it’s a daunting task to write them for a week’s worth of code.
 
 
@@ -476,46 +501,141 @@ SonarQube (formerly Sonar) is an open-source platform developed by SonarSource f
 
 Is the leading cloud software platform worldwide for drone mapping and 3D modeling. The DroneDeploy mobile app allows you to fly your drone to make interactive maps and models. ... It works with many DJI drones such as Phantom 3, Phantom 4, Inspire 1 and 2, Mavic Pro, Matrice 100, 200 and 600 models.3 Mar 2019
 
+## Statement of Work (SoW)
+
+Statement of work is a detailed overview of the project in all its dimensions. It’s also a way to share what the project entails with those who are working on the project, whether they are collaborating or are contracted to work on the project. This includes vendors and contractors who are bidding to work on the project.
+
+It’s also helpful to the project leader, as it provides a structure on which the project plan can be built on. The statement of work will also help to avoid conflicts in the project. With detail and clarity, the SoW helps keep everyone that’s involved in the project on the same page and works to leave confusion to a minimum.
 
 ## Traits of good Line Management & Essential Management  skills
 
 Qualities of good line management:
+
 1. Communicate well, be clear on vision to meet the needs of  both their employees  and bosses.
+
 2. Emotional stability 
+
 3. Enthusiasm 
-4. Self assurance 
+
+4. Self assurance
+
 5. The understanding by a manager that members of a team strive to reach  their own personal  goals, as well as their teams.
+
 6. Finding time for team members to discuss their strength and work on their weaknesses. 
+
 7. Empathy allows one to identify gaps.
+
 8. When you  work in a team it gives you sense of belonging.
 
 
 Essential Management  skills:
 
-1. Planning
-2. Communication 
-3. Decision making 
-4. Delegation
-5. Problem solving
-6. Motivation - https://github.com/kukuu/AGILITY/blob/master/motivation.md
-7. Demo strait g appropriate style of Management - https://github.com/kukuu/AGILITY/blob/master/ManagementStyles-InfluencingSkills.md
+1. A good manager ensures everyone knows what their role is, and explains the expectations for that role.
+Good management motivate people and are able to negotiate for resources and other support to achieve their goals.
+
+2. Sets clear goals and expectations keep employees engaged, with something to work towards.
+
+3. Provides the team with necessary tool to work and develop 
+
+4. Stay away from the team to develop and empower them
+
+5. Refines and reviews the success of the team
+
+6. Planning
+
+7. Communication 
+
+8. Decision making 
+
+9. Delegation
+
+10. Problem solving
+
+11. Motivation - https://github.com/kukuu/AGILITY/blob/master/motivation.md
+
+12. Demonstraitng appropriate style of Management - https://github.com/kukuu/AGILITY/blob/master/ManagementStyles-InfluencingSkills.md
+
+ And honesty and openness are skills that build trust
 
 
-## Five Essential Project Management Skills
+## Making Effective Decisions
 
-Communication. One of the most important skills for project managers is great communication. ...
-Time Management. The ability to manage time and prioritize tasks is an essential characteristic of efficient project managers. ...
-Organizational Awareness. ...
-Problem Solving. ...
-Leadership.
+1. Create a constructive environment.
 
-## Influencing
+2. Investigate the situation in detail.
+
+3. Generate good alternatives.
+
+4. Explore your options.
+
+5. Select the best solution.
+
+6. Evaluate your plan.
+
+7. Communicate your decision, and take action.
+
+
+## Influenceing with communication
 
 Effective leaders don’t just command; they inspire, persuade, and encourage. Leaders tap the knowledge and skills of a group, point individuals toward a common goal, and draw out a commitment to achieve results.
 
 To influence one needs to be clear about own goals, values, assertive and have a dynamic model to meet the challenges of the technology changing market. This requires an aggregation of a network of skills, a dynamic model and flexible governance.
 
 The goal is to influence others, not manipulate them. Effective, ethical leaders use different approaches in different situations. Leaders need to understand why they are doing something, and be clear about their own values and goals when applying their influence skills. Influencing then comes from a place of authenticity and has the greatest impact.
+
+1. Reasoning: Using logic to explain the importance of your ideas or projects. 
+
+2. Consulting and collaborating: Asking for help or involving others can create an attachment to your idea. If your proposal benefits others, make sure they know about it.
+
+3.  assertiveness
+
+4. interpersonal
+
+5. interactive
+
+6. Support Initiatives
+
+7. Attract Partnerships.
+
+8. Avoid Coercion and Manipulation.
+
+9. Acknowledge Opposing Points of View.
+
+10. Focus on Effectiveness.
+
+11. Show a Willingness to Learn
+
+
+## Five Essential Project Management Skills
+
+1. Communication. One of the most important skills for project managers is great communication. ...
+
+2. Time Management. The ability to manage time and prioritize tasks is an essential characteristic of efficient 
+
+3. Project managers. ...
+
+4. Organizational Awareness. ...
+
+5. Problem Solving. ...
+
+6. Leadership.
+
+## Skills Needed To Be A Successful Tech Leader
+
+1. The ability to establish trust.
+
+2. A strong vision for the future. 
+
+3. Cohesion with company culture. 
+
+4. Excellent problem-solving skills. 
+
+5. A strong work ethic. 
+
+6. An agreeable personality. 
+
+7. Top-notch management skills.
+
 
 ## Management Styles
 
@@ -1109,10 +1229,132 @@ Data-driven approach is when a team makes strategic decisions based on data anal
 
 An out of the box support for JS, CSS, HTML, file assets, and more (perfect for React)
 
+## Leadership & Management
+
+The main difference between the two is that leaders have people that follow them, while managers have people who simply work for them. ... For any company to be successful, it needs management that can plan, organise and coordinate its staff, while also inspiring and motivating them to perform to the best of their ability.
+
+https://www.forbes.com/sites/williamarruda/2016/11/15/9-differences-between-being-a-leader-and-a-manager/#67a42d494609
+
+
+## Improving your JavaScript performance
+
+i. Learn the techniques of asynchronous programming.
+
+ii. Pass local variables. 
+
+iii. Use gzip compression. 
+
+iii, Keep code small and light.
+
+iv. Avoid unwanted loops.
+
+v. Keep DOM access to a minimum. 
+
+vi. Cache objects to increase performance. 
+
+
+https://www.monitis.com/blog/8-tips-for-improving-your-javascript-performance/
 
 ## GraphQL
 
 Specifically, GraphQL allows you to evolve your API naturally without versioning, it provides workable documentation, it avoids the problems of over- and under-fetching, and it offers a convenient way to aggregate data from multiple sources with a single request.
+
+Fetching data with GraphQL queries: 
+
+When an application needs to retrieve data from a GraphQL API, it has to send a query to the server in which it specifies the data requirements. Most GraphQL servers accept only HTTP POST requests where the query is put into the body of the request. Note however that GraphQL itself is actually transport layer agnostic, meaning that the client-server communication could also happen using other networking protocols than HTTP.
+
+Here’s an example query that a client might send in an Instagram-like application:
+
+```
+query {
+  feed {
+    id
+    imageUrl
+    description
+  }
+}
+
+```
+
+The keyword query in the beginning expresses the operation type. Besides query, there are two more operation types called mutation and subscription. Note that the default operation type of a request is in fact query, so you might as well remove it from the above request. feed is the root field of the query and everything that follows is called the selection set of the query.
+When a server receives the above query, it will resolve it, i.e. collect the required data, and package up the response in the same format of the query. Here’s what a potential response could look like:
+
+```
+
+{
+  "data": {
+    "feed": [
+      {
+        "id": "1",
+        "description": "Nice Sunset",
+        "imageUrl": "http://example.org/sunset.png"
+      },
+      {
+        "id": "2",
+        "description": "Cute Cats",
+        "imageUrl": "http://example.org/cats.png"
+      }
+    ]
+  }
+}
+
+
+```
+The root of the returned JSON object is a field called data as defined in the official GraphQL specification. The rest of the JSON object then contains exactly the information that the client asked for in the query. If the client for example hadn’t included the imageUrl in the query’s selection set, the server wouldn’t have included it in its response either.
+
+In case the GraphQL request fails for some reason, e.g. because the query was malformed, the server will not return the data field but instead return an array called errors with information about the failure. Notice that it can happen that the server returns both, data and errors . This can occur when the server can only partially resolve a query, e.g. because the user requesting the data only had the access rights for specific parts of the query's payload.
+
+
+Creating, updating and deleting data with GraphQL mutations:
+
+Most of the time when working with an API, you’ll also want to make changes to the data that’s currently stored in the backend. In GraphQL, this is done using so-called mutations. A mutation follows the exact same syntactical structure as a query. In fact, it actually also is a query in that it combines a write operation with a directly following read operation. Essentially, the idea of a mutation corresponds to the PUT, POST and DELETE calls that you would run against a REST API but additionally allows you to fetch data in a single request.
+
+Let’s consider an example mutation to create a new post in our sample Instagram app:
+
+```
+mutation {
+  createPost(description: "Funny Birds", imageUrl: "http://example.org/birds.png") {
+    id
+  }
+}
+
+
+Instead of the query operation type, this time we’re using mutation. Then follows the root field, which in this case is called createPost. Notice that all fields can also take arguments, here we provide the post’s description and imageUrl so the server knows what it should write into the database. In the payload of the mutation we simply specify the id of the new post that will be generated on the server-side.
+
+```
+After the server created the new post in the database, it will return the following sample response to the client:
+
+```
+{
+  "data": {
+    "createPost": {
+        "id": "1"
+      }
+  }
+}
+```
+
+The Schema Definition Language (SDL)
+
+GraphQL has a type system that’s used to define the capabilities of an API. These capabilities are written down in the GraphQL schema using the syntax of the GraphQL Schema Definition Language (SDL). Here’s what the Post type from our previous examples looks like:
+
+
+```
+
+
+type Post {
+  id: ID!
+  description: String!
+  imageUrl: String!
+}
+
+```
+
+
+https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3b25c56
+
+https://docs.expo.io/versions/latest/guides/using-graphql/?redirected 
+
 
 ## Apollo GraphQL
 
@@ -1149,10 +1391,6 @@ Use composer require -dev to find all packages here https://packagist.org/_
 
 The implode() function returns a string from the elements of an array. Note: The implode() function accept its parameters in either order. However, for consistency with explode(), you should use the documented order of arguments. However, it is recommended to always use two parameters for backwards compatibility.
 
-
-## OWASP
-
-OWASP (Open Web Application Security Project) is an organization that provides unbiased and practical, cost-effective information about computer and Internet applications.
 
 ## Types of injection Attacks
 
@@ -1988,6 +2226,7 @@ https://medium.com/swlh/setting-up-a-react-typescript-sass-webpack-and-babel-7-p
 16. MVP Pattern
 
 17. MVVM Pattern
+
 Modern Modular JavaScript Design Patterns
 1. AMD
 
@@ -2186,7 +2425,9 @@ export function changeColor(color){
 
 ```
 
+## Mentoring and Coaching
 
+Mentoring is a long-term process based on mutual trust and respect. Coaching, on the other hand, is for a short period of time. Mentoring is more focused on creating an informal association between the mentor and mentee, whereas coaching follows a more structured and formal approach.
 
 ## RxJS
 
@@ -2209,10 +2450,13 @@ Like other IT management frameworks, TOGAF helps businesses align IT goals with 
 
 The Open Group states that TOGAF is intended to:
 
-Ensure everyone speaks the same language
-Avoid lock-in to proprietary solutions by standardizing on open methods for enterprise architecture
-Save time and money, and utilize resources more effectively
-Achieve demonstrable ROI.
+1. Ensure everyone speaks the same language
+
+2. Avoid lock-in to proprietary solutions by standardizing on open methods for enterprise architecture
+
+3. Save time and money, and utilize resources more effectively
+
+4. Achieve demonstrable ROI.
 
 Different elements of TOGAF are:
 
@@ -2229,84 +2473,90 @@ iii. Data architecture: defining the organization’s data storage, management a
 
 iv. Technical architecture: also called technology architecture; it describes all necessary hardware, software and IT infrastructure involved in developing and deploying business applications.
 
-## OWASP
+
+## OWASP (Open Web Application Security Project )
+
+
+OWASP (Open Web Application Security Project) is an organization that provides unbiased and practical, cost-effective information about computer and Internet applications.
+
 
 The OWASP Top 10 list consists of the 10 most seen application vulnerabilities:
 
-Injection.
+1. Injection.
 
-Broken Authentication.
+2. Broken Authentication.
 
-Broken Access control.
+3. Broken Access control.
 
-Sensitive data exposure.
+4. Sensitive data exposure.
 
-XML External Entities (XXE)
+5. XML External Entities (XXE)
 
-Security misconfigurations.
+6. Security misconfigurations.
 
-Cross Site Scripting (XSS)
+7. Cross Site Scripting (XSS)
 
-Insecure Deserialization.
+8. Insecure Deserialization.
 
 
 ## HTTP2 
 
-Concurrent downloads streamlined within a single TCP connection
+1. Concurrent downloads streamlined within a single TCP connection
 
-Enable browsers to fetch crucial assets of a web page first
+2. Enable browsers to fetch crucial assets of a web page first
 
-Optimize and improve HTTP header compression
+3. Optimize and improve HTTP header compression
 
-And integrating a feature known as 'Server Push' that allows the server to deliver crucial data before the browser asks for it.
+4. And integrating a feature known as 'Server Push' that allows the server to deliver crucial data before the browser asks for it.
+
 
 ## 10 ways to avoid cross-browser compatibility issues
 
-Validate your code.
+1. Validate your code.
 
-Fail gracefully. 
+2. Fail gracefully. 
 
-Know your audience. 
+3. Know your audience. 
 
-Consider using a framework. 
+3. Consider using a framework. 
 
-Keep your design simple. 
+4. Keep your design simple. 
 
-Reuse and reduce components.
+5. Reuse and reduce components.
 
-Test with the difficult browsers first. 
+6. Test with the difficult browsers first. 
 
-Use automation - Create test scripts .
+7. Use automation - Create test scripts .
 
 
 
-## JS Design Pttens
+## JS Design Ptterns
 
-Constructor Pattern
+1. Constructor Pattern
 
-Module Pattern
+2. Module Pattern
 
-Revealing Module Pattern
+3. Revealing Module Pattern
 
-Singleton Pattern
+4. Singleton Pattern
 
-Observer Pattern
+5. Observer Pattern
 
-Mediator Pattern
+6. Mediator Pattern
 
-Prototype Pattern
+7. Prototype Pattern
 
-Command Pattern
+8. Command Pattern
 
-Facade Pattern
+9. Facade Pattern
 
-Factory Pattern
+10. Factory Pattern
 
-Mixin Pattern
+11. Mixin Pattern
 
-Decorator Pattern
+12. Decorator Pattern
 
-Flyweight Pattern
+13. Flyweight Pattern
 
 https://addyosmani.com/resources/essentialjsdesignpatterns/book/
 
@@ -2322,29 +2572,29 @@ MVVM Pattern
 
 ## Modern Modular JavaScript Design Patterns
 
-AMD
+1. AMD
 
-CommonJS
+2. CommonJS
 
-SystemJS
+3. SystemJS
 
-ES Harmony
+4. ES Harmony
 
 ## Best practices in software engineering
 
-Develop iteratively.
+1. Develop iteratively.
 
-Manage requirements and edge cases.
+2. Manage requirements and edge cases.
 
-Use component architecture.
+3. Use component architecture.
 
-Model software visually.
+4. Model software visually.
 
-Verify quality.
+5. Verify quality.
 
-Control change.
+6. Control change.
 
-Use SOLID Principles
+7. Use SOLID Principles
 
 
 ## Basic Programming Principles Every Programmer Must Follow
@@ -2757,6 +3007,37 @@ function ExampleWithManyStates() {
 ```
 
 
+
+
+## Homormophic Encryption
+
+Homomorphic encryption is a form of encryption that allows computation on ciphertexts, generating an encrypted result which, when decrypted, matches the result of the operations as if they had been performed on the plaintext. Homomorphic encryption can be used for privacy-preserving outsourced storage and computation.
+
+Homomorphic encryption operations are malleable by definition. You would use the RSA private key for decryption.
+
+The biggest challenge in cloud computing is the security and privacy problems caused by its multi-tenancy nature and the outsourcing of infrastructure, sensitive data and critical applications.
+
+Fully Homomorphic Encryption. A fully homomorphic encryption system enables computations to be performed on encrypted data without needing to first decrypt the data. Such cryptosystems have natural applications in secure, privacy-preserving computation as well as many other areas.
+
+https://www.semanticscholar.org/paper/Optimizing-Fully-Homomorphic-Encryption-Algorithm-Kaur-Sengupta/364f5e31eb4056b4e12063761952625cf16c46de 
+
+Key security threats associated with cloud computing:
+ https://www.semanticscholar.org/paper/Security-Threats%2FAttacks-Present-in-Cloud-Munir-Palaniappan/44dc8494b2bbd8aa56320de8a209d3aa6c36628b
+
+ There are two types of encryption in widespread use today: symmetric and asymmetric encryption. The name derives from whether or not the same key is used for encryption and decryption.
+
+ SE (Searchable Encryption) is a positive way to protect users sensitive data, while preserving search ability on the server side. ... The two main branches of SE are SSE (Searchable Symmetric Encryption) and PEKS (Public key Encryption with Keyword Search).
+
+ Homomorphic encryption allows user to operate encrypted data directly without decryption.
+
+ Searchable symmetric encryption (SSE) allows a party to outsource the storage of his data to another party in a private manner, while maintaining the ability to selectively search over it.
+
+ 
+ Homomorphic Linear authention
+
+ called homomorphic linear authenticator (HLA) [1].It is a. signature scheme widely used in cloud computing and. storage server systems, which allows client that has stored. data at an untrusted server to verify that the server. possesses the original data without retrieving it
+
+
 ## Related Articles
 
 1. Agility - https://github.com/kukuu/AGILITY/blob/master/README.md 
@@ -2764,3 +3045,4 @@ function ExampleWithManyStates() {
 2. Digital Transformation - https://github.com/kukuu/digitalTransformationStrategies/blob/master/README.md 
 
 3. Scaffolding for projects - https://github.com/kukuu/AGILITY/blob/master/README-scaffolding.md
+
