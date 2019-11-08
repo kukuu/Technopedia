@@ -3038,6 +3038,52 @@ Key security threats associated with cloud computing:
  called homomorphic linear authenticator (HLA) [1].It is a. signature scheme widely used in cloud computing and. storage server systems, which allows client that has stored. data at an untrusted server to verify that the server. possesses the original data without retrieving it
 
 
+## JavaScript REST  API 
+
+A REST API is a way of easily accessing web services without having excess processing. Whenever a RESTful API is called, the server will transfer to the client a representation of the state of the requested resource.
+
+So we can define a RESTful API:
+
+1. One that is stateless. Data is not stored on the server but in sessions on the client.
+
+2. separates concerns between client-server.
+
+3.  Allows caching of data client-side
+
+4. Utilizes standardized base URLs and methods to perform the actions required to manipulate, add or delete data.
+
+Summary:Basic features of REST
+
+Stateless: Meaning the client data is not stored on the server, the session is stored client-side (typically in session storage).
+
+Client<->Server: There is a separation of concerns between the front-end (client) and the back-end (server). They operate independently of each other and both are replaceable.
+
+Cache: Data from the server can be cached on the client, which can improve performance speed.
+
+URL Composition: We use a standardized approach to the composition of base URLs. For example, a GET request to /cities, should yield all the cities in the database, whereas a GET request to /cities/seattle would render the city with an ID of seattle. Similarly, REST utilizes standard methods like GET, PUT, DELETE and POST to perform actions. Which we’ll take a look at in the next section!
+
+https://itnext.io/javascript-fundamentals-an-introduction-to-rest-apis-7cbe8a809d3b 
+
+https://www.youtube.com/watch?v=LooL6_chvN4  (1)  https://www.youtube.com/watch?v=FOZtRzY5x8E (2) - REST and RESTful Web Services explained
+
+## AXIOS vs FETCH
+
+https://medium.com/frontend-digest/axios-vs-fetch-which-to-use-in-2019-6678c083c5c
+
+
+## MAP vs EACH
+
+https://codeburst.io/javascript-map-vs-foreach-f38111822c0f
+
+## JavaScript es6 CURRY functions
+
+https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practical-examples-6ba2ced003b1
+
+## Getting started REDUX, REACT, GraphQL and Express
+
+https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3b25c56
+
+
 ## Related Articles
 
 1. Agility - https://github.com/kukuu/AGILITY/blob/master/README.md 
@@ -3045,4 +3091,3 @@ Key security threats associated with cloud computing:
 2. Digital Transformation - https://github.com/kukuu/digitalTransformationStrategies/blob/master/README.md 
 
 3. Scaffolding for projects - https://github.com/kukuu/AGILITY/blob/master/README-scaffolding.md
-
