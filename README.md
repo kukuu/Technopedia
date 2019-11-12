@@ -12,6 +12,10 @@ The biggest advantage of data lakes is flexibility. By allowing the data to rema
 
 A Hadoop data lake is a data management platform comprising one or more Hadoop clusters. It is used principally to process and store nonrelational data, such as log files, internet clickstream records, sensor data, JSON objects, images and social media posts.
 
+## JavaScript primitives 
+
+In JavaScript there are 5 primitive types: undefined , null , boolean , string and number . Everything else is an object. The primitive types boolean, string and number can be wrapped by their object counterparts. These objects are instances of the Boolean , String and Number constructors respectively.
+
 ### Big data and Data Lake
 
  Perhaps the greatest difference between data lakes and data warehouses is the varying structure of raw vs. processed data.
