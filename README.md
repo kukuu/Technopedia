@@ -1,5 +1,3 @@
-# Technopedia
-
 ## Difference between a data warehouse and a data lake
 
 The main difference between a data warehouse vs. data lake vs. relational database system is that a relational database is used to store and organize structured data from a single source, such as a transactional system, while data warehouses are built to hold structured data from multiple sources.
@@ -420,7 +418,19 @@ v. Singleton
 
 Also - https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know 
 
-### Module Design Pattern
+## System environmental Architectures
+
+1. Multi tier - https://github.com/kukuu/AGILITY/blob/master/white-paper/restfulArchitecturalDesign-2.png
+
+2. JWT - https://github.com/kukuu/AGILITY/blob/master/white-paper/restfulArchitecturalDesign-2.png
+
+3. Micro service  - https://github.com/kukuu/Microservice-NodeJS/blob/master/microservice-snapshots/3.png
+
+4. CI/CD - https://github.com/kukuu/AGILITY/blob/master/white-paper/CI-CDL-CDPL-pipeline.jpgS
+
+5. Orchestrating with Kubernetes - https://github.com/kukuu/AGILITY/blob/master/white-paper/kubernetes/1.png
+
+### Software Module Design Pattern
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components, and consistent. This provides loose coupling to support well-structured code.
 
@@ -500,6 +510,8 @@ Write unit tests daily. Do not code for days, or worse weeks, and leave unit tes
 ## SonarQube 
 
 SonarQube (formerly Sonar) is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages.
+
+Code smell: They refer to any symptom in the source code of a program that possibly indicates a deeper problem
 
 ## DroneDeploy 
 
@@ -2963,6 +2975,7 @@ then press enter
 
 https://www.youtube.com/watch?v=3RjQznt-8kE
 
+https://www.youtube.com/watch?v=MFtsLRphqDM
 
 ## REACT HOOKS 
 
@@ -3087,6 +3100,167 @@ https://medium.com/front-end-weekly/javascript-es6-curry-functions-with-practica
 
 https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3b25c56
 
+## Cypress
+
+ It is a JavaScript-based end-to-end testing framework that doesn't use Selenium at all. It is built on top of Mocha, which is again a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and fun.
+
+ Alternatively, while Cypress is used for UI testing, it uses its own unique DOM manipulation and runs directly in the browser with no network communication. ... One of the biggest gaps between Selenium and Cypress is that while Selenium runs against different browsers, as mentioned before, Cypress only supports Chrome.
+
+
+## git
+
+Work Flow - Feature Branches with Merge commits
+
+https://github.com/kukuu/algorithms/blob/master/git-workflow/feature-branch-with-merge-commits.png
+
+Option A - When  local repo exists before creaTing GITHUB repo
+
+Create and checkout branch - git checkout -b feature-1
+git status
+git branch -a
+git add .
+git commit -m ''
+git checkout feature-a
+gitcheckout feature-b
+
+merging (fast forward and recursive strategy):
+git checkout master
+git merge feature-a   
+git merge feature-b  
+
+
+
+1. Push to git - git push 'remote repo url' master
+
+2. Create an alias to 'remote repo url' - git remote add 'repourl' origin
+
+3. Push to alias - git push origin master
+
+
+
+Option B - When you dont have a local repository. Alias is created by default.
+Check alias with command 'git remote -v' 
+Result  gives 'fetch' and 'push'
+
+1. git clone 'remote repo url created'
+
+2. git status
+
+3. git add .
+
+4. git commit -m "message"
+
+5. git push origin masters
+
+
+
+Delete branch:
+
+to delete branch: git branch -D feature-3 (when branch is not merged)
+
+to delete branch: git branch -d feature-3 (when branch is  merged)
+
+
+Conflicts:
+
+No need to add message on command commit, because is a merge commit.
+1. Fix error
+
+2. git status
+
+3. git add .
+
+4. git commit
+
+5. in new editor do 'shift : wq enter key' to exit
+
+6. git log --oneline (git log)
+
+
+Collaboration:
+
+1. git checkout master
+
+2. git pull origin master
+
+3. git checkout -b feature-d
+
+4. git status
+
+5. git add .
+
+6. git commit -m "message"
+
+7. git push origin feature-d
+
+8. pick  => 'compare and pull request' f
+
+9. Add extra useful messages
+
+10. => click ' createpull request' button
+
+11. Add assignee/reviewers to code  review and request to merge
+
+12. check commits made and files changed
+
+13. Add a comment. Say 'good work'
+
+14. You can add messages to lines of code by clicking next to them (+)
+
+15. Finally, you can merge
+
+16. Confirm
+
+17. Delete branch
+
+.......................
+
+Adding missed or new features
+
+18. git chckout master
+
+19. git pull origin master  (to get other collaborators)
+
+20. git checkout -b image-update
+
+22. Make changes
+
+23. git status
+
+25. git add .
+
+26. git commit -m "added images"
+
+27. git push origin image-update
+
+28. Check remote repo
+
+29. Confirm and click branch  changes have been mades 
+
+
+30. Go to 8 : Compare and pull request
+
+In case it is not complete. Add a message : DONT MERGE:  say for example to add a misssing image and send back.
+Work to be done in same branch
+
+31. git add .
+
+32. git commit -m "added last image"
+
+33. git push origin image-update
+
+34. Check remote repo and a timeline will be added to preious commit prior to adding the missing image
+
+35. You should see message : THIS PAGE IS OUT OF DATE. REFRESH
+
+36. (REVIEWER) Go back to conversations and MERGE.
+
+37. Go to master branch and check updates.
+
+
+## Bearer Token
+
+Bearer Tokens are the predominant type of access token used with OAuth 2.0. A Bearer Token is an opaque string, not intended to have any meaning to clients using it. Some servers will issue tokens that are a short string of hexadecimal characters, while others may use structured tokens such as JSON Web Tokens.
 
 ## Related Articles
 
@@ -3095,3 +3269,25 @@ https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3
 2. Digital Transformation - https://github.com/kukuu/digitalTransformationStrategies/blob/master/README.md 
 
 3. Scaffolding for projects - https://github.com/kukuu/AGILITY/blob/master/README-scaffolding.md
+
+## TypeScript
+
+ Benefits
+ 1. Compile to JavaScript
+
+ 2. Uses IIFE
+ 		(());
+ 3. Closure
+
+ 4. Exception handling (TR/CATCH)
+
+ 5. Module Loading
+
+ 6. On demand loading using loaders: CommonJS, SystemJS, Webpack, RequireJS
+
+ 7. Compile time checking
+
+
+## The Twelve-Factor App methodology 
+
+This is a methodology for building software as a service applications. These best practices are designed to enable applications to be built with portability and resilience when deployed to the web.
