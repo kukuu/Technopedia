@@ -1,3 +1,5 @@
+# Technopedia
+
 ## Difference between a data warehouse and a data lake
 
 The main difference between a data warehouse vs. data lake vs. relational database system is that a relational database is used to store and organize structured data from a single source, such as a transactional system, while data warehouses are built to hold structured data from multiple sources.
@@ -1685,9 +1687,6 @@ When working on either element (row or column), you are most associated with the
 
 Grid is much newer than Flexbox and has a bit less browser support. That's why it makes perfect sense if people are wondering if CSS grid is here to replace Flexbox. ... Flexbox can do things Grid can't do. They can work together: a grid item can be a flexbox container.
 
-## GitHub
-
-https://www.youtube.com/watch?v=3RjQznt-8kE
 
 ## Common OAuth 2.0 grant types
 
@@ -1712,6 +1711,10 @@ iv. Client Credentials.
 v. Device Code.
 
 vi. Refresh Token.
+
+Refresh Tokens are credentials used to obtain access tokens. Refresh tokens are issued to the client by the authorization server and are used to obtain a new access token when the current access token becomes invalid or expires, or to obtain additional access tokens with identical or narrower scope.
+
+Of course, nothing lasts forever, and even the refresh token will eventually expire. These tokens commonly last for 14-60 days, and afterwards, you have no choice but to ask the user to re-authorize your application. A refresh token could last forever - it's up to the OAuth server.
 
 https://auth0.com/docs/api-auth/tutorials/implicit-grant
 
@@ -1750,6 +1753,43 @@ Benefit of VPC is that it helps in aspects of cloud computing like privacy, secu
 Classless inter-domain routing (CIDR) is a set of Internet protocol (IP) standards that is used to create unique identifiers for networks and individual devices. The IP addresses allow particular information packets to be sent to specific computers.
 
 https://specialties.bayt.com/en/specialties/q/270484/what-is-cidr-and-why-it-is-important-in-today-s-scenario/
+
+
+## Web Accessibility
+
+Web accessibility is the inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and socio-economic restrictions on bandwidth and speed.
+
+The four main guiding principles of accessibility in WCAG 2.0 are: POUR
+
+Perceivable.
+
+Operable.
+
+Understandable.
+
+Robust.
+
+
+
+How do you achieve Web accessibility?
+
+Choose a content management system that supports accessibility. ...
+
+Use headings correctly to organize the structure of your content. ...
+
+Include proper alt text for images. ...
+
+Give your links unique and descriptive names. ...
+
+Use color with care. ...
+
+Design your forms for accessibility. ...
+
+Use tables for tabular data, not for layout.
+
+## Jenkins and Maven
+
+Jenkins and maven together can be used to automate this whole pipeline. Jenkins can be used to setup rules and parameters around maven system. Maven is a tool that is used to compile your code. And not only compile it can validate your code, install a package and can even analyse the test-cases in your code.
 
 ## Pretty JSON parser
 
@@ -2971,11 +3011,7 @@ write ":wq"
 then press enter
 
 
-## Git & GitHub
 
-https://www.youtube.com/watch?v=3RjQznt-8kE
-
-https://www.youtube.com/watch?v=MFtsLRphqDM
 
 ## REACT HOOKS 
 
@@ -3107,9 +3143,9 @@ https://medium.com/@childsmaidment/getting-started-with-redux-and-graphql-8384b3
  Alternatively, while Cypress is used for UI testing, it uses its own unique DOM manipulation and runs directly in the browser with no network communication. ... One of the biggest gaps between Selenium and Cypress is that while Selenium runs against different browsers, as mentioned before, Cypress only supports Chrome.
 
 
-## git
+## git Work Flow 
 
-Work Flow - Feature Branches with Merge commits
+Feature Branches with Merge commits
 
 https://github.com/kukuu/algorithms/blob/master/git-workflow/feature-branch-with-merge-commits.png
 
@@ -3291,3 +3327,45 @@ Bearer Tokens are the predominant type of access token used with OAuth 2.0. A Be
 ## The Twelve-Factor App methodology 
 
 This is a methodology for building software as a service applications. These best practices are designed to enable applications to be built with portability and resilience when deployed to the web.
+
+
+## TestComplete
+
+TestComplete is a functional automated testing platform developed by SmartBear Software. TestComplete gives testers the ability to create automated tests for Microsoft Windows, Web, Android, and iOS applications.
+
+## Testenium
+
+Testenium generates programming language code for Selenium WebDriver in C#, Java and Python languages. ... When a test is executed Testenium records screenshots, videos and error reports and provides user with the reports without writing any code at all.
+
+## Blue Green Deployment
+
+At its core, a blue-green deployment is a release practice that maintains two production environments called blue and green, switching between whether the blue or green environment is live - using Load Ballancers. The primary benefit of this approach is to mitigate risk and control the timing of releases.
+
+## Canary deployment - Segmentation
+
+A canary deployment / canary test allows you to gradually release new features to a subset of your users while still serving your current branch to the rest of your users.  It basically allows you to test things in parallel without having to make major merges/deployments.  This allows you to A/B test features to assess performance before releasing them to a majority of your users.
+
+## Coaching & Mentoring
+
+Mentoring is a long-term process based on mutual trust and respect. Coaching, on the other hand, is for a short period of time. Mentoring is more focused on creating an informal association between the mentor and mentee, whereas coaching follows a more structured and formal approach.
+
+## Factory pattern
+
+A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.  The Factory Method Pattern is also known as Virtual Constructor.
+
+## Benefits SPA
+
+Advantages:
+
+1. Fast and responsive. Since single-page applications don't update the entire page but only required content, they significantly improve a website's speed. 
+
+2. Good for making Responsive Websites, Support mobile, Tablet & Desktop. No extra queries to the server to download pages. Performance improvement.
+
+3. Single Page Application can improve performance in many ways, Single time file load each of HTML, CSS, JS
+
+
+Disadvantages:
+
+Client must enable JavaScript, Single Page Application build with JavaScript, So JavaScript should be enabled in client browser. JavaScript enabled in all modern browsers by default.
+Security: Compare to traditional page Single Page Application is less secure due to Cross-site scripting (XSS).
+Memory Leak: Memory leak in JavaScript can even cause powerful system to slow down.
