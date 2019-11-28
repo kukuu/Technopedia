@@ -404,7 +404,7 @@ OutSystems is a low-code platform for the development of enterprise web and mobi
 
 ## JavaScript Design Patterns     
 
-Developermust  strive to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge - providing an organization structure for common issues in a particular circumstance.
+Developers must  strive to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge - providing an organization structure for common issues in a particular circumstance.
 
 
 i. Constructor Pattern
