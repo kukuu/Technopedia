@@ -404,7 +404,7 @@ OutSystems is a low-code platform for the development of enterprise web and mobi
 
 ## JavaScript Design Patterns     
 
-Developers must  strive to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge - providing an organization structure for common issues in a particular circumstance.
+Developermust  strive to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge - providing an organization structure for common issues in a particular circumstance.
 
 
 i. Constructor Pattern
@@ -424,13 +424,15 @@ Also - https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know
 
 1. Multi tier - https://github.com/kukuu/AGILITY/blob/master/white-paper/restfulArchitecturalDesign-2.png
 
-2. JWT - https://github.com/kukuu/AGILITY/blob/master/white-paper/JWT-architecture.png
+2. JWT - https://github.com/kukuu/AGILITY/blob/master/white-paper/restfulArchitecturalDesign-2.png
 
 3. Micro service  - https://github.com/kukuu/Microservice-NodeJS/blob/master/microservice-snapshots/3.png
 
-4. CI/CD - https://github.com/kukuu/AGILITY/blob/master/white-paper/CI-CDL-CDPL-pipeline.jpgS
+4. CI/CD - https://github.com/kukuu/AGILITY/blob/master/white-paper/CI-CDL-CDPL-pipeline.jpg
 
-5. Orchestrating with Kubernetes - https://github.com/kukuu/AGILITY/blob/master/white-paper/kubernetes/1.png
+5. CI/CD with Jenkins - https://github.com/kukuu/CI-CD-pipeline-with-Jenkins
+
+6. Orchestrating with Kubernetes - https://github.com/kukuu/AGILITY/blob/master/white-paper/kubernetes/1.png
 
 ### Software Module Design Pattern
 
@@ -1755,6 +1757,102 @@ Classless inter-domain routing (CIDR) is a set of Internet protocol (IP) standar
 https://specialties.bayt.com/en/specialties/q/270484/what-is-cidr-and-why-it-is-important-in-today-s-scenario/
 
 
+
+## KIBANA vs GRAFANA
+
+The main difference is that Grafana focuses on presenting time-series charts based on specific metrics such as CPU and I/O utilization. Kibana, on the other hand, runs on top of Elasticsearch and can create a comprehensive log analytics dashboard. For example, Grafana does not allow for data search and exploring.
+
+
+## HTTP Headers
+
+HTTP is a pull protocol, the client pulls information from the server (instead of server pushes information down to the client). 
+
+HTTP is a stateless protocol. Data is passed on and stored rather on the client (Caching/sessions).
+
+The REST headers and parameters contain a wealth of information that can help you track down issues when you encounter them. HTTP Headers are an important part of the API request and response as they represent the meta-data associated with the API request and response.
+
+They are name or value pairs that are displayed in the request and response messages of message headers for Hypertext Transfer Protocol (HTTP). Usually, the header name and the value are separated by a single colon. HTTP headers are an integral part of HTTP requests and responses.
+
+The response header contains the date, size and type of file that the server is sending back to the client and also data about the server itself.
+
+
+## Difference between ACCEPT HEADER and CONTENT TYPE
+
+Accept and Content-type are both headers sent from a client(browser say) to a service. Accept header is a way for a client to specify the media type of the response content it is expecting and Content-type is a way to specify the media type of request being sent from the client to the server.
+
+
+## Progressive Web Apps - PWA
+
+PWA - provides improved user experience, better visitor engagement, and increased conversion rates. What's more, they bridge the gap between responsive web pages and mobile apps. PWA technology expands the common understanding of web pages
+
+Benefits:
+
+1. Progressive Web Apps match the mobile-first approach. This means that application developed with PWA will function on mobile devices without any issues.
+
+2. PWA combines the UX of a native app with the benefits of the mobile web. Application with PWA run smoothly both as a web page and native app.
+
+3. Application built with PWA save up to 75% of the costs of a native app (both development and maintenance). 
+
+With PWA you simply don’t have to make a separate native app, it’s enough to adjust your storefront.
+
+4. PWA works offline, allowing the user to keep on browsing even without an internet connection. With any other web store, a user would have to drop this.
+
+5. Supports notification
+
+6. PWAs uses headless architecture. It’s all about separating the frontend from your backend eCommerce platform. With this approach, PWA can be added to eCommerce platform by API in just 3 months. This includes a Proof of Concept.
+
+7. Loading time of PWA is at least 2-3x faster compared to responsive or m.dot web application. Google mobile-first indexing helps it to express the high speed of PWA and it’s smooth performance on mobile devices.
+
+8. With faster loading time, PWA reduces server load. Your store won’t crash or slow down during periods of intense traffic.
+
+9. Browsing with PWA is seamless. This causes a huge increase in conversion rates. 
+
+Requirement for PWA - Service worker and Manifest.json
+
+For accelerated work you can use Google Workbox
+
+Disadvantages:
+
+1. Compatibility with iOS
+
+Since iOS 11.3, it’s been possible to run PWAs on Apple devices, but you can forget about compatibility with older devices. What’s more, Apple doesn’t allow PWAs to access many important features, including Touch ID, Face ID, ARKit, Bluetooth, serial, Beacons, altimeter sensor, and even battery information.
+
+2. Issues with legacy devices
+
+PWAs have been around for just a few years, so it shouldn’t come as a surprise that older mobile devices with outdated web browsers don’t support them too well. While this problem will inevitably solve itself in the future, it may be a source of customer complaints for some companies.
+
+3. PWAs can’t do everything
+
+As capable as PWAs are compared to traditional web apps, they can’t do everything mobile apps can do. Because they are written in JavaScript, they are not as battery efficient as apps written in native languages, such as Kotlin or Swift.
+
+Their performance is also not as good as the performance of native apps, which has a lot to do with the fact that JavaScript is a single-threaded programming language. At the moment, access to certain important device features is still missing, including Bluetooth, proximity sensors, ambient light, advanced camera controls, and others.
+
+## Golang 
+
+Golang is a statically typed, compiled programming language designed at Google.
+
+It is fast - The language is based on functions, so it is simple and fast to learn. It's compiled so it provides faster feedback, shorter time to market, and saves time and money. It's simple, so it is more maintainable, and development is faster and cheaper.
+
+Go is faster most of the time since it does not have to consider anything at runtime.
+
+Go is compiled to machine code and is executed directly, which makes it much faster than Java. It is so because Java uses VM to run its code which makes it slower as compared to Golang. ... Golang is also good in memory management,which is crucial in programming languages. Golang does not have references but has pointers.
+
+Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.
+
+In Static typed programming languages  variables need not be defined before they're used. This implies that static typing has to do with the explicit declaration.
+
+## CSP Style Concurrency
+
+In computer science, communicating sequential processes (CSP) is a formal language for describing patterns of interaction in concurrent systems. It is a member of the family of mathematical theories of concurrency known as process algebras, or process calculi, based on message passing via channels.
+
+## Prometheus
+
+Prometheus is an open source monitoring and alerting toolkit for containers and microservices. Based on the organizations that have adopted it, Prometheus has become the mainstream, open source monitoring tool of choice for those that lean heavily on containers and microservices.
+
+The Prometheus server works on the principle of scraping, i.e., invoking the metrics endpoints of the various nodes that it is configured to monitor. 
+
+It collects these metrics at regular intervals and stores them locally. The nodes expose these over the endpoints that the Prometheus server scrapes.
+
 ## Web Accessibility
 
 Web accessibility is the inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and socio-economic restrictions on bandwidth and speed.
@@ -1789,7 +1887,12 @@ Use tables for tabular data, not for layout.
 
 ## Jenkins and Maven
 
-Jenkins and maven together can be used to automate this whole pipeline. Jenkins can be used to setup rules and parameters around maven system. Maven is a tool that is used to compile your code. And not only compile it can validate your code, install a package and can even analyse the test-cases in your code.
+Jenkins  is a continuous integration tool. In Jenkins, maven is used for building the automation code. It is used to automate the build deployment process. It is used in Selenium tests to run the tests faster and every time software changes a deployment happens to different targeted environments.
+
+
+Jenkins and maven together can be used to automate this whole pipeline. 
+
+Jenkins can be used to setup rules and parameters around maven system. Maven is a tool that is used to compile your code. And not only compile it can validate your code, install a package and can even analyse the test-cases in your code.
 
 ## Pretty JSON parser
 
@@ -3353,6 +3456,22 @@ Mentoring is a long-term process based on mutual trust and respect. Coaching, on
 
 A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.  The Factory Method Pattern is also known as Virtual Constructor.
 
+## Webhook
+
+A webhook in web development is a method of augmenting or altering the behavior of a web page, or web application, with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application.
+
+
+Webhook endpoint:
+
+The receiving endpoint can choose to whitelist certain IP addresses from known sources. The webhook can include information about what type of event it is, and a secret or signature to verify the webhook. GitHub and Stripe sign their requests using an HMAC signature included as an HTTP header.
+
+
+## Difference between APIs and Webhooks
+
+To put it simply, an API does stuff when you ask it to, while a Webhook does stuff on it's own when certain criteria is met or scenarios takes place. 
+
+Webhooks on the other hand are automated calls from example.com to a server.
+
 ## Benefits SPA
 
 Advantages:
@@ -3367,5 +3486,7 @@ Advantages:
 Disadvantages:
 
 Client must enable JavaScript, Single Page Application build with JavaScript, So JavaScript should be enabled in client browser. JavaScript enabled in all modern browsers by default.
+
 Security: Compare to traditional page Single Page Application is less secure due to Cross-site scripting (XSS).
+
 Memory Leak: Memory leak in JavaScript can even cause powerful system to slow down.
