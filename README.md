@@ -1388,6 +1388,10 @@ Rust is a multi-paradigm system programming language focused on safety, especial
 
 While Rust is a general purpose language, you could write your next web app in Rust, but you wouldn't be best experiencing what it has to offer. Rust is a low-level language, best suited for systems, embedded, and other performance critical code.
 
+## Zend MVC vs Zend Expressive 
+
+https://docs.zendframework.com/zend-expressive/v3/why-expressive/
+
 ## Jenkins
 
 Used for:
@@ -1566,6 +1570,10 @@ Since Internet has stimulated the use of services, different services have been 
 
 Traditionally, integration is achieved by using gateways, which require considerable configuration effort. Many approaches and frameworks have been developed by different researchers to overcome these challenges, but up to date the challenges of integration heterogeneous services with minimal user-involvement still exist. 
 
+
+## Software Development Metrics
+
+https://techbeacon.com/app-dev-testing/9-metrics-can-make-difference-todays-software-development-teams
 
 ##  SMACSS
 
@@ -3490,3 +3498,170 @@ Client must enable JavaScript, Single Page Application build with JavaScript, So
 Security: Compare to traditional page Single Page Application is less secure due to Cross-site scripting (XSS).
 
 Memory Leak: Memory leak in JavaScript can even cause powerful system to slow down.
+
+## Poltergeist: 
+
+A PhantomJS driver for Capybara.
+
+
+## AWS AppSync 
+
+This is an enterprise level, fully managed GraphQL service with real-time data synchronization and offline programming features.
+
+You can build a new application or integrate existing data sources with AWS AppSync.
+
+## Debouncing 
+
+Is a programming practice used to ensure that time-consuming tasks do not fire so often, that it stalls the performance of the web page. In other words, it limits the rate at which a function gets invoked.
+
+
+## Basic features of RESTful Architecture
+
+
+i. Stateless: Meaning the client data is not stored on the server, the session is stored client-side (typically in session storage).
+
+ii. Client<->Server: There is a separation of concerns between the front-end (client) and the back-end (server). They operate independently of each other and both are replaceable.
+
+iii. Cache: Data from the server can be cached on the client, which can improve performance speed.
+
+
+iv. URL Composition: We use a standardized approach to the composition of base URLs.
+
+For example, a GET request to /cities, should yield all the cities in the database, whereas a GET request to /cities/seattle would render the city with an ID of seattle. 
+
+v. Similarly, REST utilizes standard methods like GET, PUT, DELETE and POST to perform actions. Which we’ll take a look at in the next section!
+
+So we can define a RESTful API as one that is stateless, it separates concerns between client-server, it allows caching of data client-side and it utilizes standardized base URLs and methods to perform the actions required to manipulate, add or delete data.
+
+## AXIOS & FETCH
+
+Is a JavaScript promise-based  HTTP client module for browsers and NodeJS.
+
+i. With fetch, we need to deal with two promises. With axios, we can directly access the JSON result inside of the response object data property.
+
+AXIOS:
+
+
+```
+axios.get("https://jsonplaceholder.typicode.com/todos/1")
+  .then(response => console.log("response", response.data))
+// {
+//   "userId": 1,
+//   "id": 1,
+//   "title": "delectus aut autem",
+//   "completed": false
+// }
+
+
+axios
+  .post("https://jsonplaceholder.typicode.com/posts", {
+    title: "Title of post",
+    body: "Body of post"
+  })
+  .then(response => console.log(response.data))
+  .catch(error => console.log(error));
+
+```
+
+
+FETCH
+
+```
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "POST",
+  body: JSON.stringify({
+    title: "Title of post",
+    body: "Post Body"
+  })
+})
+  .then(res => {
+    if (!response.ok) throw Error(response.statusText);
+    return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
+```
+
+
+ii. ERROR Handling
+
+
+Using fetch
+
+```
+
+fetch("https://jsonplaceholder.typicode.com/todos/100000")
+  .then(response => {
+    if (!response.ok) throw Error(response.statusText);
+    return response.json();
+  })
+  .then(data => console.log("data", data))
+  .catch(error => {
+    console.log("error", error);
+  });
+// error Error: Not Found
+
+```
+
+Using axios
+
+```
+axios
+  .get("https://jsonplaceholder.typicode.com/todos/100000")
+  .then(response => {
+    console.log("response", response);
+  })
+  .catch(error => {
+    console.log("error", error);
+  });
+// error Error: Not Found
+
+```
+
+
+iii. Managing Network Errrors
+
+Axios throws network errors, while fetch does not. 
+
+When working with fetch, you must always check the response.ok property. To make it easier and more reusable, you could extract this error checking into a function.
+
+
+error handling with fetch:
+
+```
+const checkForError = response => {
+  if (!response.ok) throw Error(response.statusText);
+  return response.json();
+};
+fetch("https://jsonplaceholder.typicode.com/todos/100000")
+  .then(checkForError)
+  .then(data => console.log("data", data))
+  .catch(error => {
+    console.log("error", error);
+  });
+
+```
+
+iv. Missing features
+
+Axios can monitor the progress of your uploads. This is not possible with fetch. If you are building an application with video or photo upload, this could be a dealbreaker.
+
+
+axios:
+
+```
+const config = {
+  onUploadProgress: event => console.log(event.loaded)
+};
+axios.put("/api", data, config);
+
+```
+
+v. Alternative libraries
+
+```
+ky — a tiny & elegant HTTP client based on window.fetch
+
+superagent — Small progressive client-side HTTP request library based on XMLHttpRequest
+
+```
