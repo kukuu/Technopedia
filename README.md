@@ -3665,3 +3665,6 @@ ky — a tiny & elegant HTTP client based on window.fetch
 superagent — Small progressive client-side HTTP request library based on XMLHttpRequest
 
 ```
+## HATEOAS 
+
+Hypermedia as the Engine of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures. With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia.
