@@ -3665,6 +3665,84 @@ ky — a tiny & elegant HTTP client based on window.fetch
 superagent — Small progressive client-side HTTP request library based on XMLHttpRequest
 
 ```
+
+
 ## HATEOAS 
 
 Hypermedia as the Engine of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures. With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia.
+
+https://restfulapi.net/hateoas/
+
+## Teams KPI
+
+i. Performance
+
+ii. Usability
+
+iii. Accessibility
+
+iv. SEO & Analytics
+
+v. Security
+
+## Digital Transformation
+
+Is the change associated with the application of digital technology. However, digital transformation is more than technology. It is a mindset shift. It is the adoption of new ways of working and ultimately it is the marrying of people and process to gain a competitive advantage.
+
+When planning for digital transformation, organizations must factor the cultural changes they'll confront as workers and organizational leaders adjust to adopting and relying on unfamiliar technologies.
+
+Practices used in transformation include methodologies like Agile (SCRUM, KANBAN) , XP, Waterfall, Continuous Delivery, Continuous Deployment, Micro-services, Containerization, Severless Computing, IaaS, PaaS, ITaaS, Headerless CMS, Hybrid CMS, Big Data, Analytics, Machine Learning, Change Management, Cloud Computing, Digital Security, Leadership & Development,IoT,Chat Bots, Video Chats, and Mobility Management.
+
+DT can be built around the following. The exact structure will vary depending on the specific needs of the business:
+
+1. Understand the Corporate Strategy and business domain
+
+2. Assess current state of IT Strategy and understanding  existing systems and processes
+
+3. Define Initiatives 
+
+4. Develop a Strategy Roadmap
+
+	i. Objective setting and measures of success (What you want to achieve - 
+		digitally and as a wider business)
+
+	ii. Opportunity Analysis - What you could be doing and potential rewards
+
+	iii. Barrier analysis - What’s stopping you doing this? How we can get around this
+
+	iv. Customer profiling and needs analysis - How you could serve your audiences better
+
+     v. Stakeholder engagement and Market Analysis.
+
+5. Communicate  strategy Execution
+
+The CADMA Syndrome
+
+C - Create a Vision
+
+A - Analyse the market
+
+D - Design the experience
+
+M - Measure the impact
+
+A - Adjust the infrastructure.
+
+
+Key services to deliver digital solutions and consulting services:
+
+1. Business model innovation
+
+2. Internet of Things (IoT)
+
+3. Industry‐specific disruptive technologies
+
+4. Organizsational culture and change management - AGILE etc
+
+5. Cybersecurity and digital trust.
+
+6. Effective Governance, Legislation, Data Protection (i.e GDPR and associated penalties)
+
+7. KPI
+
+8. Reporting
