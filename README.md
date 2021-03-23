@@ -10,7 +10,7 @@ The biggest advantage of data lakes is flexibility. By allowing the data to rema
 
 ### Hadoop data lake
 
-A Hadoop data lake is a data management platform comprising one or more Hadoop clusters. It is used principally to process and store nonrelational data, such as log files, internet clickstream records, sensor data, JSON objects, images and social media posts.
+A Hadoop data lake is a data management platform comprising one or more Hadoop clusters. It is used principally to process and store non-relational data, such as log files, internet clickstream records, sensor data, JSON objects, images and social media posts.
 
 ## JavaScript primitives 
 
